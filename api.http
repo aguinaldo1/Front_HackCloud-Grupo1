@@ -1,0 +1,25 @@
+
+###user
+GET localhost:8080/auth/signup
+
+
+###get companies
+GET localhost:8080/companies
+
+
+###createUser
+POST https://int-inst-idcybeubyocr-ia.integration.ocp.oraclecloud.com/ic/api/integration/v1/flows/rest/CREATE_USER_INTEGR/1.0/metadata
+Content-Type: application/js
+[{ "nome":"Daniel", "endereco":"rua 3 irmãos", "email":"danielmmf@gmail.com" }]
+
+
+
+###
+POST https://int-inst-idcybeubyocr-ia.integration.ocp.oraclecloud.com/ic/api/integration/v1/flows/rest/CREATE_USER_INTEGR/1.0/metadata
+Content-Type: application/json
+
+{
+    "nome": "5555-55",
+    "endereco":"rua 3 irmãos",
+    "email":"danielmmf@gmail.com"
+}

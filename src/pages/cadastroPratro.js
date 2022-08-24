@@ -10,7 +10,7 @@ import React,{Component} from 'react';
 import axios from "axios";
 
 const api = axios.create({
-    baseURL: "https://g6f68d74390b769-dbdesafio.adb.sa-vinhedo-1.oraclecloudapps.com/ords/mutant/",
+    baseURL: "https://int-inst-idcybeubyocr-ia.integration.ocp.oraclecloud.com:443/ic/api/integration/v1/flows/rest/CREATE_USER_INTEGR/1.0/",
   });
 
 

@@ -7,6 +7,11 @@ import Col from 'react-bootstrap/Col';
 import '../css/cusuario.css';
 import '../css/index.css';
 import React,{Component} from 'react';
+import axios from "axios";
+
+const api = axios.create({
+    baseURL: "https://int-inst-idcybeubyocr-ia.integration.ocp.oraclecloud.com:443/ic/api/integration/v1/flows/rest/CREATE_USER_INTEGR/1.0/",
+  });
 
 export default class User extends Component {
     
@@ -31,8 +36,11 @@ export default class User extends Component {
             })
         }
 
-        submitForm(){
-                alert(JSON.stringify(this.state));
+        submitForm(e){
+            e.preventDefault();
+                api.post('users/', this.state).then(res => {
+                    console.log(res.data)
+                })
         }
 
     render(){
